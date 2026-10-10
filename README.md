@@ -77,6 +77,33 @@ npm run preview
 
 The build writes static assets to `dist/`. Open the preview URL printed in the terminal.
 
+## Live Demo
+
+Deployment URL: [Project & Agency Fee Calculator](https://ziaulain.github.io/ziaulain-alizai-calculator/).
+
+This is the expected URL after publishing and enabling GitHub Pages; deployment has not been performed by this setup change.
+
+### Publish to GitHub Pages
+
+The Vite base path is `/ziaulain-alizai-calculator/`, matching the `origin` repository. From the project directory, with Node 20+ and Git push access to that repository:
+
+```sh
+npm install
+npm run deploy
+```
+
+`npm run deploy` automatically runs `npm run build` through `predeploy`, then publishes the contents of `dist/` to the `gh-pages` branch using the `gh-pages` development dependency. Git authentication uses your existing local Git credentials; do not put tokens in project files.
+
+After the first successful deploy, open the GitHub repository's **Settings → Pages**:
+
+1. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+2. Select the **gh-pages** branch and **/ (root)** folder.
+3. Click **Save**, then wait for GitHub Pages to finish publishing.
+
+For future updates, run `npm run deploy` again. The deployment command automates building and publishing; it does not run on every Git push.
+
+The local dev and preview URLs also use `/ziaulain-alizai-calculator/`; open the complete URL printed by Vite.
+
 ## Baseline examples
 
 Use **Reset to Defaults** to restore the active mode's example. Switching modes preserves each mode's current inputs; resetting one mode does not reset the other.
