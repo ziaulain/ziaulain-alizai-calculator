@@ -212,6 +212,7 @@ Verification used the installed Node 24 runtime because the shell's default Node
 - **Tool:** OpenAI Codex coding agent in this IDE-connected session. Repository files were created and edited through its workspace tools, and commands were run through its terminal tools.
 - **Model:** The session instructions identify the agent as **based on GPT-6**. The exact deployed model identifier or variant is not exposed in the available session metadata, so a more specific model name cannot be verified.
 - **AI involvement:** Project scaffolding, calculation logic, React components, tests, documentation, debugging changes, and verification commands were produced by the agent in response to the user's requirements.
+- **Prompt Assistance:** Google Gemini and OpenAI ChatGPT (GPT-6) were used to help draft, refine, and structure prompts, product requirements, and acceptance criteria provided to Codex.
 
 This disclosure does not identify the tool as Claude Code or claim a model variant that the session does not establish.
 
