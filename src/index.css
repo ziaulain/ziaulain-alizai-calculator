@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@layer base {
+  body { margin: 0; font-family: ui-sans-serif, system-ui, sans-serif; }
+  input, button { font: inherit; }
+}
